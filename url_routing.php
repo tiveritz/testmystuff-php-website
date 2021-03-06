@@ -20,7 +20,7 @@ if ($logged_in === true) {
             $page = "home";
         }
         else {
-            $str_message = "Benutzername und/oder Kennwort sind falsch";
+            $str_message = "Wrong username or password";
         }
         sleep(2.2);
     }
