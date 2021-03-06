@@ -1,0 +1,7 @@
+AddCharset UTF-8 .html
+AddCharset UFT-8 .php
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ index.php 
