@@ -1,8 +1,14 @@
 <?php
 
-require_once "./config.php";
+// Use the DOCUMENT_ROOT to determine whether to use the development or
+// deployment config.php
+if ($_SERVER["DOCUMENT_ROOT"] !== "/opt/lampp/htdocs") {
+    require_once "../config.php";
+} else {
+    require_once "./config.php";
+}
 
-header("x-powered-by: hidden"); // remove the php version from the header -> security
+header("x-powered-by: hidden"); // removes the php version from the header -> security
 $logged_in = false;
 $page = "home";
 

@@ -5,13 +5,13 @@
         <div class="bigform-right">
             <div class="bigform">
                 <div class="form-wrapper">
-                <h1>Anmelden</h1>
+                <h1>Administration</h1>
                 <form action="<?php echo(ROOT_LINK); ?>" method="POST">
                     <fieldset>
-                        <input type="hidden"        name="action"       value="login" />
-                        <input type="text"          name="username"     placeholder="E-Mail" />
-                        <input type="password"      name="password"     placeholder="Password" />
-                        <input type="submit"                            value="Anmelden" />
+                        <input type="hidden" name="action" value="login" />
+                        <input type="text" name="username" placeholder="E-Mail" />
+                        <input type="password" name="password" placeholder="Password" />
+                        <input type="submit" value="Log in" />
                     </fieldset>
                 </form>
                 </div>
