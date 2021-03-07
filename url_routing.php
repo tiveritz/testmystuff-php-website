@@ -1,6 +1,5 @@
 <?php
 
-
 $request_path = $_SERVER["REQUEST_URI"];
 $request_path = parse_url($request_path, PHP_URL_PATH);
 $request_path = trim($request_path, "/ \\");

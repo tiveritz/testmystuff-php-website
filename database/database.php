@@ -1,34 +1,25 @@
 <?php
 
-
-
 class CDatabase
 {
-    private $hDatabase = null;
+    private $db = null;
 
     function __construct($server, $user, $pass, $database) {
-        $this -> hDatabase = @new mysqli($server, $user, $pass, $database);
-        if ($this -> hDatabase -> connect_error) {
-            die($this -> hDatabase -> connect_error);
+        $this -> db = @new mysqli($server, $user, $pass, $database);
+        if ($this -> db -> connect_error) {
+            die($this -> db -> connect_error);
         }
     }
 
     function __destruct() {
-        @$this -> hDatabase -> close();
-        $this -> hDatabase = null;
-    }
-
-    private function query($q) {
-        return ($this -> hDatabase -> query($q));
-    }
-
-    function escape($str)
-    {
-        return ($this->hDatabase->real_escape_string($str));
+        $this -> db -> close();
+        $this -> db = null;
     }
 
     public function is_valid_login($email, $password_hash) {
-        $result = $this -> query("SELECT * FROM users WHERE email = '$email'");
+        $email = $this -> escape($email);
+
+        $result = $this -> db -> query("SELECT * FROM users WHERE email = '$email'");
         $result_array = $result -> fetch_all(MYSQLI_ASSOC);
 
         if (!empty($result_array)) {
@@ -37,5 +28,9 @@ class CDatabase
             }
         }
         return false;
+    }
+
+    function escape($str) {
+        return ($this -> db ->real_escape_string($str));
     }
 }
