@@ -1,2 +1,3 @@
 config.php
-config_deploy.php
+config_deployment.php
+._config.php

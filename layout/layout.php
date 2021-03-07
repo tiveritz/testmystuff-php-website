@@ -6,6 +6,4 @@
     <title>login</title>
     <link rel="stylesheet" href="<?php echo("./styles/style.css");?>" />
   </head>
-  <?php
-
-include "./pages/".$page.".php";
+  <?php include "./pages/".$page.".php";

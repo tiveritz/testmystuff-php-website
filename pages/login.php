@@ -1,4 +1,3 @@
-
 <body class="bgform">
     <div class="bigform-wrapper">
         <div class="bigform-left"></div>
@@ -9,7 +8,7 @@
                 <form action="<?php echo(ROOT_LINK); ?>" method="POST">
                     <fieldset>
                         <input type="hidden" name="action" value="login" />
-                        <input type="text" name="username" placeholder="E-Mail" />
+                        <input type="text" name="email" placeholder="E-Mail" />
                         <input type="password" name="password" placeholder="Password" />
                         <input type="submit" value="Log in" />
                     </fieldset>
@@ -17,11 +16,11 @@
                 </div>
             </div>
             <div class="bigform-message">
-<?php
-    if( strlen( $str_message ) > 0 ) {
-        echo( "<p>$str_message</p>" );
-}
-?>
+                <?php
+                    if( strlen( $str_message ) > 0 ) {
+                        echo( "<p>$str_message</p>" );
+                    }
+                ?>
             </div>
         </div>
     </div>
