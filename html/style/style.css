@@ -21,6 +21,7 @@ h1 {
 }
 
 .bgform {
+  height: 100%;
   background: white;
   display: flex;
   justify-content: center;
