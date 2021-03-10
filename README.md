@@ -23,3 +23,5 @@ That means the project is automatically deployed when pushing onto deployment br
   * Find a way to include other projects
   * Find better way to automatically include configuration files (development / production)
 </br></br>
+### Sequence Diagram
+![header image](docs/testmystuff.png?raw=true "testmystuff sequence diagram")
