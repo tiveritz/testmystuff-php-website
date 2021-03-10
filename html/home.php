@@ -24,7 +24,7 @@
     <div id="info">
         <div>
             <div>At Some Point You'll Always</div>
-            <div>Have to testyurstuff.online</div>
+            <div>Have to testyourstuff.online</div>
             <div class="size-mini">tiveritz</div>
         </div>
     </div>
