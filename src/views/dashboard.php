@@ -1,14 +1,14 @@
 <?php
 
 // -- LOGIN REQUIRED ---------------------------------------------------
-require_once "./auth/login.php";
+require_once "../src/auth/login.php";
 
 
 if ($is_authenticated === true):
 // -- USER AUTHENTICATED BELOW -----------------------------------------
 
 
-include "./html/dashboard.php";
+include "../src/html/dashboard.php";
 
 
 // -- USER AUTHENTICATED ABOVE -----------------------------------------

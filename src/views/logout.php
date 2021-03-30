@@ -11,4 +11,4 @@ $login_message = "Successfully logged out";
 $login_url = ROOT."/dashboard";
 sleep( 1.2 );
 
-include "./html/login.php";
+include "../src/html/login.php";

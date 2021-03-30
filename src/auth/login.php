@@ -23,13 +23,13 @@ $_SESSION["timeout"] = time();
 
 
 // -- AUTHENTICATION ---------------------------------------------------
-require_once "./functions/post.php";
+require_once "../src/functions/post.php";
 
 $login_message = "";
 $login_url = $_SERVER["REQUEST_URI"];;
 
 if ($is_authenticated === false) {
-    require_once './db/database.php';
+    require_once '../src/db/database.php';
     $database = new CDatabase(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
     if (isset($_POST["email"]) || isset($_POST["password"])) {
@@ -48,5 +48,5 @@ if ($is_authenticated === false) {
 }
 
 if ($is_authenticated === false) {
-    include "./html/login.php";
+    include "../src/html/login.php";
 }
