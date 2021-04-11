@@ -1,6 +1,6 @@
-# web-training-with-php-and-database
+# testyourstuff-php-website
 
-Hello again PHP. It has been a long time since we last met, May 2020. This time
+Hello again PHP. It has been a long time since we last met. This time
 a little bit better, but still pure PHP without any frameworks.
 </br></br>
 ### Features
